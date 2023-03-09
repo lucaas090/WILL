@@ -4,6 +4,7 @@
   código dentro de las funciones ya definidas. 
   No comentar la funcion 
 */
+//h: array={}
 function pluck(array, propiedad) {
   // La función llamada 'pluck' recibe como argumento un array de objetos llamado 'array' y el nombre de una
   // propiedad.
@@ -12,9 +13,8 @@ function pluck(array, propiedad) {
   // var productos = [{ name: 'TV LCD', price: 100}, { name: 'Computadora', price: 500 }]
   // productos.pluck(productos, 'name') debería devolver ['TV LCD', 'Computadora']
   // Pista: es una buena oportunidad para usar map.
-
   // Tu código acá:
-
+    return array.map(function (element){return element[propiedad];})
 }
 
 // No modifiques nada debajo de esta linea //
